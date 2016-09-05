@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>清松小屋</title>
+	<meta name="description" content="佘松和张清的小屋">
+	<meta name="author" content="Dominic">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+	<link href='images/icon.png' rel='icon' type='image/x-icon'/>
+    
+</head>
+<body>
+<div class="wrap-body">
+<!--Header-->
+<header>
+	<div class="wrap-header">
+		<div class="zerogrid">
+			<div id="logo">
+			<img src="./images/logo_photo.jpg" style="width:300px;margin-bottom:40px;"/>
+			<h3 style="color:#57A8C1;margin-bottom:10px;">欢迎来到佘松和张清的回忆小屋</h3>
+			<p>这里承载着我们之间所有的回忆和满满的爱</p>
+			</div>
+		</div>
+	</div>
+    <div id="loveHeart" style="display:none;">
+        <canvas id="garden"></canvas>
+        <div id="words">
+            <div id="messages">
+                Minyue, I have fallen in love with you for
+                <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+                Love u forever and ever.<br/>
+                <div class="signature">- hackerzhou</div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Content-->
+<section class="container">
+	<div class="zerogrid">
+		<div class="col-2-3">
+			<div id="main-content">
+                <div class"row">                  
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+                                <img class="full" src="images/2016_6_10.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>敷面膜</a></h1>
+										<span style="color: grey; font-size: 14px;">2016 - 06 - 10</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        你是谁？你到底是何方妖怪？快把我的小清清还给我！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+                                <img class="full" src="images/2016_5_14_doumao.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>逗猫</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 05 - 14</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        吃完晚饭和小清清在文山湖旁散步。这家伙最喜欢逗喵了，见到喵就好像见到自己的同类一样。
+                                        但是看起来喵喵更喜欢跟着我走，hiahiahia</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+                                <img class="full" src="images/2016_4_3_qiche.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>骑车</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 04 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        来追我呀，追到我就让你嘿嘿嘿~</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class"row">                   
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+                                <img class="full" src="images/20160_3_28_yiyuan.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>看病</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 03 - 28</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        我家小清清身体不舒服，带她去看中医</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+                                <img class="full" src="images/2016_3_19_dacan.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>大餐</a></h1>
+										<span style="color: grey; font-size: 14px;">2016 - 03 - 19</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        学生狗也有周末，带小清清去大吃一顿。</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+                                <img class="full" src="images/2016_3_1_meihualing2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>梅花岭</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 03 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        意犹未尽</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class"row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+                                <img class="full" src="images/2016_3_1_meihualing.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>梅花岭</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 03 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        和小伙伴一起去爬莲花山，下山后还顺路去看梅花岭。</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2016_2_14_qingrenjie.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>情人节</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 02 - 14</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        我们的第一个情人节没法一起过，泪目啊T_T</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2016_2_5_hanjia.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>寒假</a></h1>
+										<span style="color: grey; font-size: 14px;">2016 - 02 - 05</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        寒假回家了，除了想你还是想你</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class"row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+                                <img class="full" src="images/2016_1_1_szwan2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>2016年的第一天</a></h1>
+										<span style="color: grey; font-size: 14px;">2016 - 01 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        小清清生病住院了，我也一直守在她身边寸步不离。
+                                        2016年的第一天小清清身体稍微好转了些，我骑车车带她深圳湾散散心</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2016_1_1_szwan3.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>深圳湾</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 01 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        一个字，美！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+                                <img class="full" src="images/2016_1_1_szwan4.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>深圳湾</a></h1>
+										<span style="color: white; font-size: 14px;">2016 - 01 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        “看我的小猫拳！！！”“？？？”</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>                  
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+                                <img class="full" src="images/2015_12_5_birthday.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>生日</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 12 - 05</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        ff</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_12_1_xishan5.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>广西西山寺庙</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 12 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        有很多家庭、朋友和情侣都会这许愿，据说还挺灵的！
+                                        我和小清清一定会来还愿的！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_12_1_xishan1.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>广西西山</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 12 - 01</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        和小清清一起回家后，第二天我们就爬山了。但是小清清身体不太舒服，我们没爬太高</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_11_30_huijia3.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>回“家”</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 11 - 30</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        和小清清一起搞坏0.0</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_11_30_huijia1.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>回“家”</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 11 - 30</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        恩？回家？是和小清清一起回她家啦。现在想来都还是好兴奋>_<</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_11_20_paobu2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>田径场</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 11 - 20</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        “我不喜欢这个世界，我只喜欢你~”</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_11_20_paobu1.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>田径场</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 11 - 20</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        上面的那位，不要偷懒，快下来跟我一起做准备运动！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_11_7_nanning.png">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>只身去广西</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 11 - 08</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        小清清不知得了什么怪病，去了广西最好的医院住院治疗了。我老妈也同时生病了，
+                                        回家看望老妈后偷偷跑去南宁看我的小清清。现在回想起来其实当时还是有点怕的，
+                                        孤身坐5个钟左右的车去人生地不熟的地方。但是，年轻的时候不疯狂，以后还有机会吗？</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_10_19_toupai.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>华为开发者大会</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 19</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        我们院组织去参加华为开发者大会，坐大巴来回要1个半钟，还得在那待上一整天。
+                                        小清清很疲劳，刚吃完饭就午睡了(～﹃～)~zZ</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_10_3_hk7.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        两位大美女，左边那位是我的了！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_10_3_hk6.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        美女和帅哥！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_10_3_hk10.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        我和我最喜欢的运动员--小贝！</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_10_3_hk3.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        小清清和她的男神...</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_10_3_hk1.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        哈哈哈还不叩见朕和皇后</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_10_3_hk2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>星光大道</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        哈哈哈还不叩见朕和皇后</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_10_3_hk1.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>香港美杜莎蜡像馆</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 10 - 03</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        哈哈哈还不叩见朕和皇后</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_10_2_meisha.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>小梅沙</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 10 - 02</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        带上小清清和她的小伙伴到深圳小梅沙玩。这是我第一次下海，
+                                        原来脚踩沙滩是那么舒服的一件事。风景很不错，人更不错。</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_9_27_zhongqiu.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>2015年中秋</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 09 - 27</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        2015年的中秋，我回家，把小清清落在了学校。这是我们第一次分开超过3天。
+                                        小清清闲得无聊还把床铺装饰得美美的。(*^__^*) 嘻嘻……</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+                </div>
+				<div class="row">
+                    <div class="col-1-2">
+						<div class="wrap-col">
+							<article class="blue">
+								<img class="full" src="images/2015_9_18_movie.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>第一次看电影</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 09 - 18</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        准备进场看小黄人咯~</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="wrap-col">
+							<article>
+								<img class="full" src="images/2015_9_18_first2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>第一次看电影</a></h1>
+										<span style="color: grey; font-size: 14px;">2015 - 09 - 18</span>
+									</div>
+									<div class="art-content">
+										<p>
+                                        我和小清清第一次去看电影，但是去得太早了>_<，干脆来了个合照</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="wrap-col">
+							<article class="black">
+								<img class="full" src="images/2015_8_20_shijiezhichuang2.jpg">
+								<div class="wrap-art">
+									<div class="art-header">
+										<h1 class="title"><a>深圳-世界之窗</a></h1>
+										<span style="color: white; font-size: 14px;">2015 - 08 - 20</span>
+									</div>
+									<div class="art-content">
+										<p>我们的第一次约会，晚上还去了世界之窗完</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Footer-->
+<footer>
+	<div class="zerogrid">
+	   <div class="col-1-3">
+			<div class="copyright">
+				<p>Designed and Developed by Song</p>
+			</div>
+	   </div>
+	   <div class="col-1-3">
+			<div class="back-to-top">
+				<a href="#">Back to top</a>
+			</div>
+	   </div>
+	   <div class="col-1-3">
+	   </div>
+	</div>
+</footer>
+
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var displayMode = 1;
+    var together = new Date();
+    together.setFullYear(2015, 8, 4);
+    together.setHours(16);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+    
+    $("#loveHeart").click(function(){
+        displayMode *= -1;
+        timeElapse(together, displayMode);
+    });
+    
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 5000);
+
+        timeElapse(together, displayMode);
+        setInterval(function () {
+            timeElapse(together, displayMode);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+</script>
+</body></html>
